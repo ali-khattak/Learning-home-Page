@@ -1,0 +1,16 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow-x: unset;
+  
+}
+body {
+  overflow-x: hidden;
+}
+@media (min-width: 768px) {
+  .custom\\:flex {
+    display: flex;
+  }
+}
+
