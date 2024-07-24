@@ -2,16 +2,6 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import searchIcon from '/public/search-icon.svg'; // Adjust the path as needed
 
-const Navbar = () => {
-  const [menuVisible, setMenuVisible] = useState(false);
-  const menuItems = ["Courses", "Pages", "About", "Sign in"];
-
-  const handleToggleMenu = () => {
-    setMenuVisible((prevVisible) => !prevVisible);
-  };
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import searchIcon from '/public/search-icon.svg'; // Adjust this path as necessary
 
 const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -105,14 +95,12 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
 
-  const handleSearchKeyPress = (event) => {
-    if (event.key === 'Enter') {
-      // Handle search functionality here
-      console.log('Search:', event.target.value);
-    }
-  };
+const handleSearchKeyPress = (event) => {
+  if (event.key === 'Enter') {
+    // Handle search functionality here
+    console.log('Search:', event.target.value);
+  }
 
   return (
     <header className="w-full p-8 bg-[#F4FDFB]">
@@ -188,7 +176,7 @@ export default Navbar;
         </div>
       )}
     </header>
-  );
+  )
 };
 
 export default Navbar;
