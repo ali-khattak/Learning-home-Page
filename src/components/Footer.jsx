@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-green-900 text-white py-8">
+    <footer className="bg-teal-800 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between space-y-8 md:space-y-0">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
@@ -42,8 +42,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-700 mt-6 pt-4 text-center text-sm">
-          <p>Made by &copy; Ali Shan Khattak, 2023, All rights reserved</p>
+        <div className="border-t border-gray-700 mt-6 pt-4 text-left-1 text-sm">
+          <p>Designed by &copy; Rubel, 2023, All rights reserved</p>
         </div>
       </div>
     </footer>
