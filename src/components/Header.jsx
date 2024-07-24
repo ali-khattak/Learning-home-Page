@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import searchIcon from '/public/search-icon.svg';
- // Adjust the path as needed
-
+import searchIcon from '/public/search-icon.svg'; // Adjust the path as needed
 
 const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -23,14 +21,16 @@ const Navbar = () => {
     <header className="w-full p-8 bg-[#F4FDFB]">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
-          <h1 className="text-teal-700 text-2xl font-bold">KnowledgePulse</h1>
+          <h1 className="hidden lg:block text-teal-700 text-2xl font-bold tracking-wide">
+            KnowledgePulse
+          </h1>
         </div>
-        <div className="flex items-center">
-          <div className="relative">
+        <div className="flex-grow flex items-center justify-center">
+          <div className="relative w-48 sm:w-64 md:w-72 lg:w-96">
             <input
               type="text"
               placeholder="Search courses"
-              className="px-4 py-2 border rounded-lg bg-white pl-10"
+              className="w-full px-4 py-2 border rounded-lg bg-white pl-10"
               onKeyPress={handleSearchKeyPress}
             />
             <img
@@ -51,6 +51,9 @@ const Navbar = () => {
                   {item.includes("Pages") ? (
                     <select className="bg-transparent">
                       <option>{item}</option>
+                      <option className="text-red-500 bg-yellow-100 hover:bg-yellow-200">Subpage 1</option>
+                      <option className="text-green-500 bg-blue-100 hover:bg-blue-200">Subpage 2</option>
+                      <option className="text-purple-500 bg-pink-100 hover:bg-pink-200">Subpage 3</option>
                     </select>
                   ) : (
                     item
@@ -76,6 +79,9 @@ const Navbar = () => {
                     {item.includes("Pages") ? (
                       <select className="bg-transparent">
                         <option>{item}</option>
+                        <option className="text-red-500 bg-yellow-100 hover:bg-yellow-200">Subpage 1</option>
+                        <option className="text-green-500 bg-blue-100 hover:bg-blue-200">Subpage 2</option>
+                        <option className="text-purple-500 bg-pink-100 hover:bg-pink-200">Subpage 3</option>
                       </select>
                     ) : (
                       item
@@ -95,6 +101,5 @@ const Navbar = () => {
     </header>
   );
 };
-
 
 export default Navbar;
