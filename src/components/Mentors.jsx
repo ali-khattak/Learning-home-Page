@@ -38,8 +38,9 @@ const mentors = [
 const NextArrow = ({ onClick }) => {
   return (
     <div
-      className="absolute bottom-[-60px] right-1 text-2xl text-gray-700 bg-teal-50 border border-gray-300 rounded-full p-2 cursor-pointer z-10"
+      className="text-xl text-green-600 bg-white border border-gray-300 p-1 cursor-pointer ml-2"
       onClick={onClick}
+      style={{ width: '30px', height: '30px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
     >
       &gt;
     </div>
@@ -49,8 +50,9 @@ const NextArrow = ({ onClick }) => {
 const PrevArrow = ({ onClick }) => {
   return (
     <div
-      className="absolute bottom-[-60px] left-12 text-2xl text-gray-700 bg-teal-50 border border-gray-300 rounded-full p-2 cursor-pointer z-10"
+      className="text-xl text-green-600 bg-white border border-gray-300 p-1 cursor-pointer"
       onClick={onClick}
+      style={{ width: '30px', height: '30px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
     >
       &lt;
     </div>
@@ -64,8 +66,6 @@ const Mentors = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -100,7 +100,10 @@ const Mentors = () => {
   return (
     <div className="py-16 bg-green-50">
       <div className="max-w-6xl mx-auto px-4 relative">
-        <h2 className="text-3xl font-bold mb-8 text-center">Meet our professional <span className="text-indigo-600">mentors.</span></h2>
+        <h2 className="text-3xl font-bold mb-8 text-left text-green-800">
+          Meet our professional <br />
+          mentors
+        </h2>
         <Slider {...settings}>
           {mentors.map((mentor, index) => (
             <div key={index} className="px-2">
@@ -117,6 +120,10 @@ const Mentors = () => {
             </div>
           ))}
         </Slider>
+        <div className="flex justify-start mt-8 space-x-2">
+          <PrevArrow />
+          <NextArrow />
+        </div>
       </div>
     </div>
   );

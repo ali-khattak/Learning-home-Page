@@ -38,207 +38,37 @@ const courses = [
   {
     mainCourse: 'UX/UI Design',
     subCourses: [
-      {
-        image: webDesignImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: webImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: uiImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: mobileUIImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
+      { image: webDesignImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', description: 'the course description goes here', designation: 'UX/UI designer', rating: 4.8, reviews: '44k reviews' },
+      { image: webImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', description: 'the course description goes here', designation: 'UX/UI designer', rating: 4.8, reviews: '44k reviews' },
+      { image: uiImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', designation: 'UX/UI designer', description: 'the course description goes here', rating: 4.8, reviews: '44k reviews' },
+      { image: mobileUIImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', designation: 'UX/UI designer', description: 'the course description goes here', rating: 4.8, reviews: '44k reviews' },
     ],
   },
   {
     mainCourse: 'Digital Market',
     subCourses: [
-      {
-        image: webDesignImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: webImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        description: 'the course description goes here',
-        designation: 'UX/UI designer',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: uiImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: mobileUIImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
+      { image: webDesignImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', description: 'the course description goes here', designation: 'UX/UI designer', rating: 4.8, reviews: '44k reviews' },
+      { image: webImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', description: 'the course description goes here', designation: 'UX/UI designer', rating: 4.8, reviews: '44k reviews' },
+      { image: uiImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', designation: 'UX/UI designer', description: 'the course description goes here', rating: 4.8, reviews: '44k reviews' },
+      { image: mobileUIImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', designation: 'UX/UI designer', description: 'the course description goes here', rating: 4.8, reviews: '44k reviews' },
     ],
   },
   {
     mainCourse: 'Data Scientist',
     subCourses: [
-      {
-        image: webDesignImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        description: 'the course description goes here',
-        designation: 'UX/UI designer',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: webImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: uiImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: mobileUIImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
+      { image: webDesignImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', description: 'the course description goes here', designation: 'UX/UI designer', rating: 4.8, reviews: '44k reviews' },
+      { image: webImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', description: 'the course description goes here', designation: 'UX/UI designer', rating: 4.8, reviews: '44k reviews' },
+      { image: uiImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', designation: 'UX/UI designer', description: 'the course description goes here', rating: 4.8, reviews: '44k reviews' },
+      { image: mobileUIImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', designation: 'UX/UI designer', description: 'the course description goes here', rating: 4.8, reviews: '44k reviews' },
     ],
   },
   {
     mainCourse: 'Data Analyst',
     subCourses: [
-      {
-        image: webDesignImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: webImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: uiImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: mobileUIImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-    ],
-  },
-  {
-    mainCourse: 'Front-End Developer',
-    subCourses: [
-      {
-        image: webDesignImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: webImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: uiImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
-      {
-        image: mobileUIImage,
-        title: 'Google UX/UI Analytics',
-        instructor: 'Theresa Webb',
-        designation: 'UX/UI designer',
-        description: 'the course description goes here',
-        rating: 4.8,
-        reviews: '44k reviews',
-      },
+      { image: webDesignImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', description: 'the course description goes here', designation: 'UX/UI designer', rating: 4.8, reviews: '44k reviews' },
+      { image: webImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', description: 'the course description goes here', designation: 'UX/UI designer', rating: 4.8, reviews: '44k reviews' },
+      { image: uiImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', designation: 'UX/UI designer', description: 'the course description goes here', rating: 4.8, reviews: '44k reviews' },
+      { image: mobileUIImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', designation: 'UX/UI designer', description: 'the course description goes here', rating: 4.8, reviews: '44k reviews' },
     ],
   },
 ];
@@ -256,7 +86,6 @@ const CoursesSection = () => {
       { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1, infinite: true, dots: true } },
       { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1, dots: true } },
     ],
-    
   };
 
   const handleCourseChange = (index) => {
@@ -267,8 +96,8 @@ const CoursesSection = () => {
   };
 
   return (
-    <div className="bg-green-50 py-16">
-      <div className="max-w-6xl mx-auto px-4">
+    <div className="text-teal-950 py-16 relative">
+      <div className=" max-w-6xl mx-auto px-4">
         <h2 className="text-4xl font-bold mb-8 text-teal-950">Launch a New Career<br />in as little as 6 months</h2>
         <div className="block md:hidden">
           <Slider
