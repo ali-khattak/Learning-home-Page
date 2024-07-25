@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import { FaStar } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
@@ -60,12 +60,15 @@ const PrevArrow = ({ onClick }) => {
 };
 
 const Mentors = () => {
+  const sliderRef = useRef(null);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    
     responsive: [
       {
         breakpoint: 1024,
@@ -104,7 +107,7 @@ const Mentors = () => {
           Meet our professional <br />
           mentors
         </h2>
-        <Slider {...settings}>
+        <Slider ref={sliderRef} {...settings}>
           {mentors.map((mentor, index) => (
             <div key={index} className="px-2">
               <div className="bg-white p-6 rounded-lg shadow-lg text-center">
@@ -121,8 +124,8 @@ const Mentors = () => {
           ))}
         </Slider>
         <div className="flex justify-start mt-8 space-x-2">
-          <PrevArrow />
-          <NextArrow />
+          <PrevArrow onClick={() => sliderRef.current.slickPrev()} />
+          <NextArrow onClick={() => sliderRef.current.slickNext()} />
         </div>
       </div>
     </div>
