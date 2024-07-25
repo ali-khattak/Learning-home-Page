@@ -12,7 +12,7 @@ const Newsletter = () => {
           Our Newsletter
         </h2>
         <p className="text-lg text-gray-700 mb-6">
-          Join now to receive personalized recommendations from the full Coursera catalog.
+          Join now to receive personalized recommendations from <br></br> the full Coursera catalog.
         </p>
         <div className="flex justify-center">
           <input
@@ -20,7 +20,7 @@ const Newsletter = () => {
             placeholder="Enter your mail"
             className="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-l-lg w-64 focus:outline-none"
           />
-          <button className="bg-green-600 text-white px-6 py-2 rounded-r-lg">
+          <button className="bg-teal-800 text-white px-6 py-2 rounded-r-lg">
             Subscribe
           </button>
         </div>
