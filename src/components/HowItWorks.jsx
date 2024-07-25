@@ -3,8 +3,10 @@ import React from 'react';
 const HowItWorks = () => {
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">How KnowledgePulse <span className="text-green-600">works</span></h2>
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-12">
+          How KnowledgePulse <span className="text-green-600">works</span>
+        </h2>
         <div className="flex flex-wrap justify-center -mx-4">
           {/* Card 1 */}
           <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
@@ -24,7 +26,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2 mt-4">Create your profile</h3>
               <p className="text-gray-600 mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-              <button className="bg-green-600 text-white px-4 py-2 rounded">Get Started</button>
+              <button className="bg-teal-800 text-white px-4 py-2 rounded">Get Started</button>
             </div>
           </div>
           {/* Card 2 */}
@@ -53,7 +55,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2 mt-4">Search Courses</h3>
               <p className="text-gray-600 mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-              <button className="bg-green-600 text-white px-4 py-2 rounded">Get Started</button>
+              <button className="bg-teal-800 text-white px-4 py-2 rounded">Get Started</button>
             </div>
           </div>
           {/* Card 3 */}
@@ -82,7 +84,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2 mt-4">Make a Connection</h3>
               <p className="text-gray-600 mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-              <button className="bg-green-600 text-white px-4 py-2 rounded">Get Started</button>
+              <button className="bg-teal-800 text-white px-4 py-2 rounded">Get Started</button>
             </div>
           </div>
         </div>

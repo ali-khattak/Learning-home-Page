@@ -8,38 +8,37 @@ const mentors = [
   {
     name: 'Darrell Steward',
     title: 'UX/UI Designer',
-    image: '/public/P1.svg', // Use appropriate image path
+    image: '/P1.svg', // Use appropriate image path
     rating: 4.8,
     reviews: '44k reviews'
   },
   {
     name: 'Kathryn Murphy',
     title: 'Data Scientist',
-    image: '/public/P2.svg', // Use appropriate image path
+    image: '/P2.svg', // Use appropriate image path
     rating: 4.8,
     reviews: '44k reviews'
   },
   {
     name: 'Brooklyn Simmons',
     title: 'Data Analysis',
-    image: '/public/P3.svg', // Use appropriate image path
+    image: '/P3.svg', // Use appropriate image path
     rating: 4.8,
     reviews: '44k reviews'
   },
   {
     name: 'Esther Howard',
     title: 'UX/UI Designer',
-    image: '/public/P4.svg', // Use appropriate image path
+    image: '/P4.svg', // Use appropriate image path
     rating: 4.8,
     reviews: '44k reviews'
   }
 ];
 
-
 const NextArrow = ({ onClick }) => {
   return (
     <div
-      className="absolute bottom-0 right-4 text-4xl text-indigo-600 cursor-pointer z-10"
+      className="absolute bottom-[-60px] right-1 text-2xl text-gray-700 bg-teal-50 border border-gray-300 rounded-full p-2 cursor-pointer z-10"
       onClick={onClick}
     >
       &gt;
@@ -50,7 +49,7 @@ const NextArrow = ({ onClick }) => {
 const PrevArrow = ({ onClick }) => {
   return (
     <div
-      className="absolute bottom-0 left-4 text-4xl text-indigo-600 cursor-pointer z-10"
+      className="absolute bottom-[-60px] left-12 text-2xl text-gray-700 bg-teal-50 border border-gray-300 rounded-full p-2 cursor-pointer z-10"
       onClick={onClick}
     >
       &lt;
@@ -100,7 +99,7 @@ const Mentors = () => {
 
   return (
     <div className="py-16 bg-green-50">
-      <div className="container mx-auto px-4 relative">
+      <div className="max-w-6xl mx-auto px-4 relative">
         <h2 className="text-3xl font-bold mb-8 text-center">Meet our professional <span className="text-indigo-600">mentors.</span></h2>
         <Slider {...settings}>
           {mentors.map((mentor, index) => (
