@@ -15,7 +15,7 @@ const Testimonial = () => {
         </p>
         <div className="flex justify-center items-center mb-4">
           <img
-            src="/public/Logo.png" // Use appropriate image path
+            src="/theresa-webb.png" // Use appropriate image path
             alt="Theresa Webb"
             className="w-12 h-12 rounded-full mr-4"
           />
