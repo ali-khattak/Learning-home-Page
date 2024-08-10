@@ -1,8 +1,9 @@
 import React, { useState, useRef } from 'react';
 import Slider from 'react-slick';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './styles.css'; // Import the CSS file
+import './styles.css';
 
 import mobileUIImage from '/mobileui.png';
 import webDesignImage from '/webdesign.jfif';
@@ -13,13 +14,13 @@ import greaterIcon from '/greater.svg';
 import lessIcon from '/less.svg';
 
 const CustomPrevArrow = ({ onClick }) => (
-  <button className="custom-arrow" onClick={onClick}>
+  <button className="custom-arrow cursor-pointer" onClick={onClick}>
     <img src={lessIcon} alt="Previous" />
   </button>
 );
 
 const CustomNextArrow = ({ onClick }) => (
-  <button className="custom-arrow" onClick={onClick}>
+  <button className="custom-arrow cursor-pointer" onClick={onClick}>
     <img src={greaterIcon} alt="Next" />
   </button>
 );
@@ -75,6 +76,7 @@ const courses = [
 const CoursesSection = () => {
   const [selectedCourse, setSelectedCourse] = useState(0);
   const sliderRef = useRef(null);
+  const navigate = useNavigate(); // Initialize the navigate function for navigation
 
   const settings = {
     dots: true,
@@ -95,8 +97,12 @@ const CoursesSection = () => {
     }
   };
 
+  const handleSubCourseClick = (subCourse) => {
+    navigate('/subcourse-details', { state: { subCourse } }); // Pass the selected subcourse data to the new page
+  };
+
   return (
-    <div className="text-teal-950 py-16 relative">
+    <div className="text-teal-950 py-16 relative bg-light-green">
       <div className=" max-w-6xl mx-auto px-4">
         <h2 className="text-4xl font-bold mb-8 text-teal-950">Launch a New Career<br />in as little as 6 months</h2>
         <div className="block md:hidden">
@@ -143,7 +149,7 @@ const CoursesSection = () => {
           <Slider {...settings} ref={sliderRef}>
             {courses[selectedCourse].subCourses.map((subCourse, index) => (
               <div key={index} className="p-4">
-                <div className="bg-white rounded-lg shadow-lg p-6">
+                <div className="bg-white rounded-lg shadow-lg p-6 cursor-pointer" onClick={() => handleSubCourseClick(subCourse)}>
                   <img src={subCourse.image} alt={subCourse.title} className="w-full h-40 object-cover rounded-md mb-4" />
                   <h4 className="text-xl font-bold mb-2">{subCourse.title}</h4>
                   <p className="text-gray-700">{subCourse.description}</p>
@@ -163,13 +169,13 @@ const CoursesSection = () => {
             ))}
           </Slider>
         </div>
-        <div className="slider-controls">
+        <div className="slider-controls absolute bottom- left-[calc(100% - 4rem)] flex items-center space-x-2">
           <CustomPrevArrow onClick={() => sliderRef.current.slickPrev()} />
           <CustomNextArrow onClick={() => sliderRef.current.slickNext()} />
         </div>
       </div>
     </div>
   );
-};
+  };
 
 export default CoursesSection;
