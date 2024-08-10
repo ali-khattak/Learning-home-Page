@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+//import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import TrustedBy from "../components/TrustedBy";
 import CoursesSection from "../components/CoursesSection";
@@ -13,7 +13,7 @@ import Newsletter from "../components/Newsletter";
 const Page = () => {
   return (
     <div>
-      <Header />
+      
       <HeroSection />
       <TrustedBy />
       <CoursesSection />
