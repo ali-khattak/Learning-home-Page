@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import searchIcon from '/public/search-icon.svg'; // Adjust the path as needed
 
 const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
-  const menuItems = ["Courses", "Pages", "About", "Sign in"];
+  const menuItems = ["Home", "Courses", "Pages", "About"];
 
   const handleToggleMenu = () => {
     setMenuVisible((prevVisible) => !prevVisible);
@@ -44,28 +45,36 @@ const Navbar = () => {
           {menuVisible ? <FaTimes /> : <FaBars />}
         </button>
         <nav className="hidden lg:flex justify-center items-center">
-          <ul className="flex space-x-8">
+          <ul className="flex space-x-5">
             {menuItems.map((item, index) => (
               <li key={index}>
-                <a href="#" className="block lg:inline hover:underline">
-                  {item.includes("Pages") ? (
-                    <select className="bg-transparent">
-                      <option>{item}</option>
-                      <option className="text-red-500 bg-yellow-100 hover:bg-yellow-200">Subpage 1</option>
-                      <option className="text-green-500 bg-blue-100 hover:bg-blue-200">Subpage 2</option>
-                      <option className="text-purple-500 bg-pink-100 hover:bg-pink-200">Subpage 3</option>
-                    </select>
-                  ) : (
-                    item
-                  )}
-                </a>
+                {item === "Pages" ? (
+                  <select
+                    className="bg-transparent"
+                    onChange={(e) => window.location.href = e.target.value}
+                  >
+                    <option value="#">Pages</option>
+                    <option value="/mentors">Mentors</option>
+                    <option value="/FAQ">FAQ's</option>
+                   
+                    <option value="/blog-articles">Blog and<br></br> Articles</option>
+                    
+                  </select>
+                ) : (
+                  <Link
+                    to={item === "Home" ? "/" : `/${item.toLowerCase().replace(' ', '-')}`}
+                    className="block lg:inline hover:underline"
+                  >
+                    {item}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
         </nav>
         <div className="hidden lg:flex items-center">
-          <button className="ml-4 px-5 py-2 bg-green-600 text-white rounded-full">
-            Sign Up
+          <button className="ml-4 px-5 py-2 bg-green-600 text-white rounded">
+            Sign in
           </button>
         </div>
       </div>
@@ -75,24 +84,32 @@ const Navbar = () => {
             <ul className="flex flex-col space-y-4">
               {menuItems.map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="block text-center hover:underline">
-                    {item.includes("Pages") ? (
-                      <select className="bg-transparent">
-                        <option>{item}</option>
-                        <option className="text-red-500 bg-yellow-100 hover:bg-yellow-200">Subpage 1</option>
-                        <option className="text-green-500 bg-blue-100 hover:bg-blue-200">Subpage 2</option>
-                        <option className="text-purple-500 bg-pink-100 hover:bg-pink-200">Subpage 3</option>
-                      </select>
-                    ) : (
-                      item
-                    )}
-                  </a>
+                  {item === "Pages" ? (
+                    <select
+                      className="bg-transparent"
+                      onChange={(e) => window.location.href = e.target.value}
+                    >
+                      <option value="#">Pages</option>
+                      <option value="/mentors">Mentors</option>
+                      <option value="/FAQ">FAQ's</option>
+                      <option value="/blog-articles">Blog and  Articles</option>
+                      
+                      
+                    </select>
+                  ) : (
+                    <Link
+                      to={item === "Home" ? "/" : `/${item.toLowerCase().replace(' ', '-')}`}
+                      className="block text-center hover:underline"
+                    >
+                      {item}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
             <div className="flex flex-col items-center mt-4">
-              <button className="px-5 py-2 bg-green-600 text-white rounded-full">
-                Sign Up
+              <button className="px-5 py-2 bg-green-600 text-white rounded">
+                Sign in
               </button>
             </div>
           </nav>
