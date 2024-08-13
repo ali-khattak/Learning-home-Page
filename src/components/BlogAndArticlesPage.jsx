@@ -100,7 +100,7 @@ const BlogAndArticlesPage = () => {
               <button
                 className={`px-4 py-2 rounded-full text-sm ${
                   selectedCategory === "Marketing"
-                    ? "bg-green-600 text-white"
+                    ? "bg-[#134e4a] text-white"
                     : "bg-gray-200"
                 }`}
                 onClick={() => setSelectedCategory("Marketing")}
@@ -110,7 +110,7 @@ const BlogAndArticlesPage = () => {
               <button
                 className={`px-4 py-2 rounded-full text-sm ${
                   selectedCategory === "Technology"
-                    ? "bg-green-600 text-white"
+                    ? "bg-[#134e4a] text-white"
                     : "bg-gray-200"
                 }`}
                 onClick={() => setSelectedCategory("Technology")}
@@ -120,7 +120,7 @@ const BlogAndArticlesPage = () => {
               <button
                 className={`px-4 py-2 rounded-full text-sm ${
                   selectedCategory === "SEO"
-                    ? "bg-green-600 text-white"
+                    ? "bg-[#134e4a] text-white"
                     : "bg-gray-200"
                 }`}
                 onClick={() => setSelectedCategory("SEO")}
@@ -130,7 +130,7 @@ const BlogAndArticlesPage = () => {
               <button
                 className={`px-4 py-2 rounded-full text-sm ${
                   selectedCategory === "Social Media"
-                    ? "bg-green-600 text-white"
+                    ? "bg-[#134e4a] text-white"
                     : "bg-gray-200"
                 }`}
                 onClick={() => setSelectedCategory("Social Media")}
