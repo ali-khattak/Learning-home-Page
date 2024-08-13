@@ -37,8 +37,8 @@ const FAQPage = () => {
     <div className=" bg-white ">
     
     <div className="bg-green-50">
-        <div className="bg-teal-800py-8 px-4 md:px-8 ">
-        <header className="mentors-hero rounded-lg bg-teal-800 text-white py-56 text-center px-68">
+        <div className="bg-teal-800py-8 px-16 md:px-8 ">
+        <header className="mentors-hero rounded-lg bg-teal-800 text-white py-56 text-center px-72">
           
           <h1 className="text-4xl font-bold">FAQ Page</h1>
         </header>
