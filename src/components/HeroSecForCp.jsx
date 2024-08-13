@@ -32,7 +32,7 @@ const HeroSecForCp = () => {
   }, [dropdownVisible]);
 
   return (
-    <section className="relative bg-teal-50 p-16 min-h-screen flex items-center justify-center">
+    <section className="relative bg-teal-50 p-8 min-h-screen flex items-center justify-center">
       <div className="bg-teal-800 text-white rounded-lg p-48 shadow-lg w-full max-w-8xl flex flex-col items-center">
         <h1 className="text-lg font-medium tracking-widest">KNOWLEDGEPULSE</h1>
         <h2 className="text-4xl font-bold mt-4">Our Courses</h2>
@@ -66,7 +66,7 @@ const HeroSecForCp = () => {
               <div className="absolute bg-teal-800 right-0 mt-2 w-48 bg-black border border-gray-300 rounded-lg shadow-lg z-10">
                 <ul className="py-2">
                   <li 
-                    className="px-4 py-2 hover:bg-teal-800 cursor-pointer" 
+                    className="px-4 py-2 hover: cursor-pointer" 
                     onClick={handleDropdownItemClick}
                   >
                     Course 1
@@ -88,3 +88,8 @@ const HeroSecForCp = () => {
 };
 
 export default HeroSecForCp;
+
+
+
+
+
