@@ -40,7 +40,7 @@ const NextArrow = ({ onClick }) => {
     <div
       className="text-xl text-green-600 bg-white border border-gray-300 p-1 cursor-pointer ml-2"
       onClick={onClick}
-      style={{ width: '30px', height: '30px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+      style={{ width: '35px', height: '35px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
     >
       &gt;
     </div>
@@ -52,7 +52,7 @@ const PrevArrow = ({ onClick }) => {
     <div
       className="text-xl text-green-600 bg-white border border-gray-300 p-1 cursor-pointer"
       onClick={onClick}
-      style={{ width: '30px', height: '30px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+      style={{ width: '35px', height: '35px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
     >
       &lt;
     </div>
@@ -63,7 +63,7 @@ const Mentors = () => {
   const sliderRef = useRef(null);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -84,8 +84,8 @@ const Mentors = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          infinite: true
+          
         }
       },
       {
@@ -93,8 +93,8 @@ const Mentors = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          infinite: true
+          
         }
       }
     ]
