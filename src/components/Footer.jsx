@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-6 pt-4 text-left-1 text-sm">
-          <p>Designed by &copy; Rubel, 2023, All rights reserved</p>
+          <p>Designed by &copy; Ali Shan Khattak, 2023, All rights reserved</p>
         </div>
       </div>
     </footer>
