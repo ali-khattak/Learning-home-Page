@@ -71,14 +71,14 @@ const BlogAndArticlesPage = () => {
   return (
     <div className="bg-green-50">
       {/* Header Section */}
-      <div className="bg-green-50 rounded-lg py-8 px-0 md:px-32">
-        <div className="bg-[#134e4a] rounded-lg py-32 px-60 flex justify-center">
-          <h1 className="text-sm font-bold text-white uppercase">Blog</h1>
+      <div className="bg-green-50">
+        <div className="bg-teal-800py-16 px- md:px-8 ">
+        <header className="mentors-hero rounded-lg bg-teal-800 text-white py-56 text-center px-68">
+          <h1 className="text-300 mb-4">Blogs</h1>
+          <h1 className="text-4xl font-bold">Articles & News</h1>
+        </header>
         </div>
-        <div className="bg-[#134e4a] rounded-lg py-20 px-16 flex justify-center">
-          <h1 className="text-white text-5xl font-bold">Articles & News</h1>
         </div>
-      </div>
 
       {/* Latest Articles Section */}
       <section className="bg-white px-8 py-16">
