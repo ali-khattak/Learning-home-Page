@@ -36,12 +36,12 @@ const FAQPage = () => {
   return (
     <div className="bg-white">
       <div className="bg-green-50 w-full">
-  <div className="bg-teal-800 w-full py-16 px-4 md:px-8">
-    <header className="rounded-lg bg-teal-800 text-white py-20 px-4 text-center md:py-32 md:px-16 lg:py-56 lg:px-24">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">FAQ Page</h1>
-    </header>
-  </div>
-</div>
+        <div className="bg-[#000C34] w-full py-16 px-4 md:px-8">
+          <header className="rounded-lg bg-[#000C34] text-white py-20 px-4 text-center md:py-32 md:px-16 lg:py-56 lg:px-24">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">FAQ Page</h1>
+          </header>
+        </div>
+      </div>
 
 
       {/* FAQ Section */}

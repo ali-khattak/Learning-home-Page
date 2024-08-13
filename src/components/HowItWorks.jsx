@@ -26,7 +26,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2 mt-4">Create your profile</h3>
               <p className="text-gray-600 mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-              <button className="bg-teal-800 text-white px-4 py-2 rounded">Get Started</button>
+              <button className="bg-[#000C34] text-white px-4 py-2 rounded">Get Started</button>
             </div>
           </div>
           {/* Card 2 */}
@@ -55,7 +55,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2 mt-4">Search Courses</h3>
               <p className="text-gray-600 mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-              <button className="bg-teal-800 text-white px-4 py-2 rounded">Get Started</button>
+              <button className="bg-[#000C34] text-white px-4 py-2 rounded">Get Started</button>
             </div>
           </div>
           {/* Card 3 */}
@@ -84,7 +84,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2 mt-4">Make a Connection</h3>
               <p className="text-gray-600 mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-              <button className="bg-teal-800 text-white px-4 py-2 rounded">Get Started</button>
+              <button className="bg-[#000C34] text-white px-4 py-2 rounded">Get Started</button>
             </div>
           </div>
         </div>

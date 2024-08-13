@@ -12,10 +12,10 @@ const HeroSection = () => {
   return (
     <section className="relative bg-teal-50 p-16">
       <div className="container mx-auto flex justify-center">
-        <div className="bg-teal-800 text-white rounded-lg p-8 md:flex md:items-center shadow-lg">
+        <div className="bg-[#000C34] text-white rounded-lg p-8 md:flex md:items-center shadow-lg">
           <div className="md:w-1/2">
             <h1 className="text-lg font-medium tracking-widest">K N O W L E D G E P U L S E</h1>
-            
+
             <h2 className="text-4xl font-bold mt-4">Knowledge Meets<br></br> Innovation</h2>
             <p className="mt-4">
               This platform's simplicity belies its powerful capabilities, offering a seamless and enjoyable educational experience.
@@ -34,7 +34,7 @@ const HeroSection = () => {
                 />
               </div>
               <div className="relative">
-                <button 
+                <button
                   className="bg-teal-600 text-white px-4 py-2 rounded-r-full flex items-center"
                   onClick={handleToggleDropdown}
                 >
@@ -46,7 +46,7 @@ const HeroSection = () => {
                     <ul className="py-2">
                       <li className="px-4 py-2 hover:bg-white-100 cursor-pointer">Course 1</li>
                       <li className="px-4 py-2 hover:bg-white-100 cursor-pointer">Course 2</li>
-                     
+
                     </ul>
                   </div>
                 )}

@@ -45,7 +45,7 @@ const courses = [
       { image: mobileUIImage, title: 'Google UX/UI Analytics', instructor: 'Theresa Webb', designation: 'UX/UI designer', description: 'the course description goes here', rating: 4.8, reviews: '44k reviews' },
     ],
   },
-      
+
   {
     mainCourse: 'UX/UI Design',
     subCourses: [
@@ -97,22 +97,22 @@ const CoursesSection = () => {
     slidesToShow: 4, // Display 4 subcourses cards on larger screens
     slidesToScroll: 1,
     responsive: [
-      { 
-        breakpoint: 1024, 
-        settings: { 
-          slidesToShow: 2, 
-          slidesToScroll: 1, 
-          infinite: true, 
-          dots: true 
-        } 
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
       },
-      { 
-        breakpoint: 600, 
-        settings: { 
-          slidesToShow: 1, 
-          slidesToScroll: 1, 
-          dots: true 
-        } 
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
       },
     ],
   };
@@ -130,51 +130,51 @@ const CoursesSection = () => {
 
   return (
     <div className="py-16 bg-green-50">
-    <div className="text-teal-800 py-16 relative bg-light-green">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col">
-        <h2 className="text-4xl font-bold mb-8 text-teal-800">Launch a New Career in as little as 6 months</h2>
-        <div className="flex mb-8 space-x-4 overflow-x-auto">
-          {courses.map((course, index) => (
-            <button
-              key={index}
-              className={`py-2 px-4 font-semibold whitespace-nowrap ${index === selectedCourse ? 'border-b-2 border-green-800 text-green-800' : 'text-green-800 hover:text-green-800'}`}
-              onClick={() => handleCourseChange(index)}
-            >
-              {course.mainCourse}
-            </button>
-          ))}
-        </div>
-        <h3 className="text-2xl font-bold mb-4">{courses[selectedCourse].mainCourse}</h3>
-        <div className="relative overflow-hidden mb-12">
-          <Slider {...settings} ref={sliderRef}>
-            {courses[selectedCourse].subCourses.map((subCourse, index) => (
-              <div key={index} className="p-4">
-                <div className="bg-white shadow-lg p-6 cursor-pointer" onClick={() => handleSubCourseClick(subCourse)}>
-                  <img src={subCourse.image} alt={subCourse.title} className="w-full h-40 object-cover mb-4" />
-                  <h4 className="text-xl font-bold mb-2">{subCourse.title}</h4>
-                  <p className="text-gray-700">{subCourse.description}</p>
-                  <div className="flex items-center mt-4">
-                    <img src={instructorImage} alt={subCourse.instructor} className="w-10 h-10 mr-4" />
-                    <div>
-                      <h5 className="text-md font-semibold">{subCourse.instructor}</h5>
-                      <p className="text-green-800 text-sm">{subCourse.designation}</p>
+      <div className="text-[#000C34] py-16 relative bg-light-green">
+        <div className="max-w-6xl mx-auto px-4 flex flex-col">
+          <h2 className="text-4xl font-bold mb-8 text-[#000C34]">Launch a New Career in as little as 6 months</h2>
+          <div className="flex mb-8 space-x-4 overflow-x-auto">
+            {courses.map((course, index) => (
+              <button
+                key={index}
+                className={`py-2 px-4 font-semibold whitespace-nowrap ${index === selectedCourse ? 'border-b-2 border-green-800 text-green-800' : 'text-green-800 hover:text-green-800'}`}
+                onClick={() => handleCourseChange(index)}
+              >
+                {course.mainCourse}
+              </button>
+            ))}
+          </div>
+          <h3 className="text-2xl font-bold mb-4">{courses[selectedCourse].mainCourse}</h3>
+          <div className="relative overflow-hidden mb-12">
+            <Slider {...settings} ref={sliderRef}>
+              {courses[selectedCourse].subCourses.map((subCourse, index) => (
+                <div key={index} className="p-4">
+                  <div className="bg-white shadow-lg p-6 cursor-pointer" onClick={() => handleSubCourseClick(subCourse)}>
+                    <img src={subCourse.image} alt={subCourse.title} className="w-full h-40 object-cover mb-4" />
+                    <h4 className="text-xl font-bold mb-2">{subCourse.title}</h4>
+                    <p className="text-gray-700">{subCourse.description}</p>
+                    <div className="flex items-center mt-4">
+                      <img src={instructorImage} alt={subCourse.instructor} className="w-10 h-10 mr-4" />
+                      <div>
+                        <h5 className="text-md font-semibold">{subCourse.instructor}</h5>
+                        <p className="text-green-800 text-sm">{subCourse.designation}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center mt-4">
+                      <span className="text-gray-500 text-lg">&#9733; {subCourse.rating}</span>
+                      <span className="text-gray-500 text-sm ml-2">({subCourse.reviews})</span>
                     </div>
                   </div>
-                  <div className="flex items-center mt-4">
-                    <span className="text-gray-500 text-lg">&#9733; {subCourse.rating}</span>
-                    <span className="text-gray-500 text-sm ml-2">({subCourse.reviews})</span>
-                  </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-        <div className="flex justify-start mt-1/2 space-x-2">
-          <CustomPrevArrow onClick={() => sliderRef.current.slickPrev()} />
-          <CustomNextArrow onClick={() => sliderRef.current.slickNext()} />
+              ))}
+            </Slider>
+          </div>
+          <div className="flex justify-start mt-1/2 space-x-2">
+            <CustomPrevArrow onClick={() => sliderRef.current.slickPrev()} />
+            <CustomNextArrow onClick={() => sliderRef.current.slickNext()} />
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

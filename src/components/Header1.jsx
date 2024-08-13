@@ -21,7 +21,7 @@ const Navbar = () => {
     <header className="w-full p-8 bg-[#F4FDFB]">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
-          <h1 className="hidden lg:block text-teal-700 text-2xl font-bold tracking-wide">
+          <h1 className="hidden lg:block text-[#000C34] text-2xl font-bold tracking-wide">
             KnowledgePulse
           </h1>
         </div>

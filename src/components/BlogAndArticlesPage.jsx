@@ -52,7 +52,7 @@ const BlogAndArticlesPage = () => {
         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
       image: "/A5.jfif", // Update with the correct image path
     },
-    { 
+    {
       id: 6,
       category: "Technology",
       title: "Exploring the Advancements in Blockchain Technology",
@@ -72,13 +72,13 @@ const BlogAndArticlesPage = () => {
     <div className="bg-green-50">
       {/* Header Section */}
       <div className="bg-green-50">
-        <div className="bg-teal-800py-16 px- md:px-8 ">
-        <header className="mentors-hero rounded-lg bg-teal-800 text-white py-56 text-center px-68">
-          <h1 className="text-300 mb-4">Blogs</h1>
-          <h1 className="text-4xl font-bold">Articles & News</h1>
-        </header>
+        <div className="bg-[#000C34]py-16 px- md:px-8 ">
+          <header className="mentors-hero rounded-lg bg-[#000C34] text-white py-56 text-center px-68">
+            <h1 className="text-300 mb-4">Blogs</h1>
+            <h1 className="text-4xl font-bold">Articles & News</h1>
+          </header>
         </div>
-        </div>
+      </div>
 
       {/* Latest Articles Section */}
       <section className="bg-white px-8 py-16">
@@ -88,51 +88,46 @@ const BlogAndArticlesPage = () => {
             <div className="flex flex-wrap gap-4">
               {/* Category Buttons */}
               <button
-                className={`px-4 py-2 rounded-full text-sm ${
-                  selectedCategory === "All"
+                className={`px-4 py-2 rounded-full text-sm ${selectedCategory === "All"
                     ? "bg-[#134e4a] text-white"
                     : "bg-gray-200"
-                }`}
+                  }`}
                 onClick={() => setSelectedCategory("All")}
               >
                 All
               </button>
               <button
-                className={`px-4 py-2 rounded-full text-sm ${
-                  selectedCategory === "Marketing"
+                className={`px-4 py-2 rounded-full text-sm ${selectedCategory === "Marketing"
                     ? "bg-[#134e4a] text-white"
                     : "bg-gray-200"
-                }`}
+                  }`}
                 onClick={() => setSelectedCategory("Marketing")}
               >
                 Marketing
               </button>
               <button
-                className={`px-4 py-2 rounded-full text-sm ${
-                  selectedCategory === "Technology"
+                className={`px-4 py-2 rounded-full text-sm ${selectedCategory === "Technology"
                     ? "bg-[#134e4a] text-white"
                     : "bg-gray-200"
-                }`}
+                  }`}
                 onClick={() => setSelectedCategory("Technology")}
               >
                 Technology
               </button>
               <button
-                className={`px-4 py-2 rounded-full text-sm ${
-                  selectedCategory === "SEO"
+                className={`px-4 py-2 rounded-full text-sm ${selectedCategory === "SEO"
                     ? "bg-[#134e4a] text-white"
                     : "bg-gray-200"
-                }`}
+                  }`}
                 onClick={() => setSelectedCategory("SEO")}
               >
                 SEO
               </button>
               <button
-                className={`px-4 py-2 rounded-full text-sm ${
-                  selectedCategory === "Social Media"
+                className={`px-4 py-2 rounded-full text-sm ${selectedCategory === "Social Media"
                     ? "bg-[#134e4a] text-white"
                     : "bg-gray-200"
-                }`}
+                  }`}
                 onClick={() => setSelectedCategory("Social Media")}
               >
                 Social Media

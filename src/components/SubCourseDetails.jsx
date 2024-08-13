@@ -5,13 +5,13 @@ import youtubeIcon from '/public/youtube-icon.svg';
 import adobeIcon from '/adobe.svg';
 import instructorImage from '/P1.svg';
 import Newsletter from './Newsletter';
-import Footer from './Footer'; 
-import { Icon } from '@iconify/react'; 
+import Footer from './Footer';
+import { Icon } from '@iconify/react';
 
 const CourseDetailPage = () => {
     const { courseId } = useParams();
-    const [activeTab, setActiveTab] = useState('info'); 
-    const [openSections, setOpenSections] = useState({}); 
+    const [activeTab, setActiveTab] = useState('info');
+    const [openSections, setOpenSections] = useState({});
 
     const toggleSection = (index) => {
         setOpenSections((prev) => ({ ...prev, [index]: !prev[index] }));
@@ -26,7 +26,7 @@ const CourseDetailPage = () => {
         reviews: '5,598',
         instructor: 'Sahed Kawser',
         price: '$29',
-        image: './public/laptop.png', 
+        image: './public/laptop.png',
         tags: [],
         sections: [
             {
@@ -54,12 +54,12 @@ const CourseDetailPage = () => {
     return (
         <div className="bg-green-50 course-detail-page">
             <div className="bg-green-50 course-detail-page">
-                <div className="course-hero bg-teal-800 text-white p-48 rounded-lg shadow-lg flex justify-between items-center mx-4 md:mx-8">
+                <div className="course-hero bg-[#000C34] text-white p-48 rounded-lg shadow-lg flex justify-between items-center mx-4 md:mx-8">
                     <div>
                         <h1 className="text-4xl font-bold">{courseDetails.title}</h1>
                         <p className="mt-4">{courseDetails.description}</p>
                         <div className="mt-4 flex items-center">
-                            {courseDetails.duration} . {courseDetails.modules} . 
+                            {courseDetails.duration} . {courseDetails.modules} .
                             <span>{courseDetails.rating}</span> <span>({courseDetails.reviews})</span>
                         </div>
                         <p className="mt-2 flex items-center">
@@ -69,8 +69,8 @@ const CourseDetailPage = () => {
                     </div>
                     <div className="mt-4 flex flex-wrap gap-2">
                         {courseDetails.tags.map((tag, index) => (
-                            <span 
-                                key={index} 
+                            <span
+                                key={index}
                                 className="bg-teal-600 text-white px-2 py-1 rounded-full text-sm">
                                 {tag}
                             </span>
@@ -83,14 +83,14 @@ const CourseDetailPage = () => {
                 <div className="col-span-2">
                     <div className="course-info p-6 rounded-lg">
                         <div className="flex border-b-2 border-gray-300 mb-4">
-                            <button 
-                                className={`px-4 py-2 ${activeTab === 'info' ? 'border-b-2 border-teal-800' : ''}`}
+                            <button
+                                className={`px-4 py-2 ${activeTab === 'info' ? 'border-b-2 border-[#000C34]' : ''}`}
                                 onClick={() => setActiveTab('info')}
                             >
                                 Course Info
                             </button>
-                            <button 
-                                className={`px-4 py-2 ${activeTab === 'reviews' ? 'border-b-2 border-teal-800' : ''}`}
+                            <button
+                                className={`px-4 py-2 ${activeTab === 'reviews' ? 'border-b-2 border-[#000C34]' : ''}`}
                                 onClick={() => setActiveTab('reviews')}
                             >
                                 Reviews
@@ -105,10 +105,10 @@ const CourseDetailPage = () => {
                                         <div key={index} className="section-item mb-4 bg-light-green p-4 rounded-lg mr-4">
                                             <div onClick={() => toggleSection(index)} className="cursor-pointer flex justify-between items-center">
                                                 <span>{section.title}</span>
-                                                <Icon 
-                                                    icon={openSections[index] ? "line-md:chevron-small-down" : "line-md:chevron-small-right"} 
-                                                    style={{ color: 'black' }} 
-                                                    className="ml-auto" 
+                                                <Icon
+                                                    icon={openSections[index] ? "line-md:chevron-small-down" : "line-md:chevron-small-right"}
+                                                    style={{ color: 'black' }}
+                                                    className="ml-auto"
                                                 />
                                             </div>
                                             {openSections[index] && (
@@ -130,10 +130,10 @@ const CourseDetailPage = () => {
                                         <div key={index} className="section-item mb-4 bg-light-green p-4 rounded-lg">
                                             <div onClick={() => toggleSection(index)} className="cursor-pointer flex justify-between items-center">
                                                 <span>{section.title}</span>
-                                                <Icon 
-                                                    icon={openSections[index] ? "line-md:chevron-small-down" : "line-md:chevron-small-right"} 
-                                                    style={{ color: 'black' }} 
-                                                    className="ml-auto" 
+                                                <Icon
+                                                    icon={openSections[index] ? "line-md:chevron-small-down" : "line-md:chevron-small-right"}
+                                                    style={{ color: 'black' }}
+                                                    className="ml-auto"
                                                 />
                                             </div>
                                             {openSections[index] && (
@@ -190,7 +190,7 @@ const CourseDetailPage = () => {
                             <h3 className="text-xl font-semibold">{course.title}</h3>
                             <p className="text-gray-500 mt-2">{course.instructor}</p>
                             <div className="flex items-center mt-2">
-                                <span className="text-yellow-500">{course.rating}</span> 
+                                <span className="text-yellow-500">{course.rating}</span>
                                 <span className="ml-2 text-gray-500">({course.reviews})</span>
                             </div>
                         </div>

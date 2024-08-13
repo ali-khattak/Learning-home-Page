@@ -78,8 +78,8 @@ const Navbar = () => {
   };
 
   const linkClass = (item) => {
-    const isActive = location.pathname === `/${item.toLowerCase()}` || 
-                     (location.pathname === '/' && item === 'Home');
+    const isActive = location.pathname === `/${item.toLowerCase()}` ||
+      (location.pathname === '/' && item === 'Home');
     return `block lg:inline hover:bg-green-800 rounded ${isActive ? 'bg-green-800 text-white' : ''}`;
   };
 
@@ -87,7 +87,7 @@ const Navbar = () => {
     <header className="w-full p-6 bg-[#F4FDFB]">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
-          <h1 className="hidden lg:block text-teal-700 text-2xl font-bold tracking-wide">
+          <h1 className="hidden lg:block text-[#000C34] text-2xl font-bold tracking-wide">
             KnowledgePulse
           </h1>
         </div>
@@ -129,7 +129,7 @@ const Navbar = () => {
                       placeholder="Pages"
                       className="bg-transparent border-none focus:ring-0"
                     />
-                    
+
                   </div>
                 ) : (
                   <Link
@@ -142,7 +142,7 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <button className="px-5 py-2 bg-teal-800 text-white rounded">
+              <button className="px-5 py-2 bg-[#000C34] text-white rounded">
                 Sign in
               </button>
             </li>
@@ -169,7 +169,7 @@ const Navbar = () => {
                         placeholder="Pages"
                         className="bg-transparent border-none focus:ring-0"
                       />
-                      
+
                     </div>
                   ) : (
                     <Link
@@ -182,7 +182,7 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <button className="px-5 py-2 bg-teal-800 text-white rounded">
+                <button className="px-5 py-2 bg-[#000C34] text-white rounded">
                   Sign in
                 </button>
               </li>
