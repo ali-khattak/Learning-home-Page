@@ -20,7 +20,7 @@ const mentors = [
 const MentorsPage = () => {
     return (
       <div className="mentors-page">
-        <div className="bg-green-50">
+        <div className="bg-teal-800 bg-green-50">
         <div className="py-16 px- md:px-8 ">
         <header className="mentors-hero rounded-lg bg-teal-800 text-white py-56 text-center px-68">
           <h1 className="text-300 mb-4">Teachers</h1>
