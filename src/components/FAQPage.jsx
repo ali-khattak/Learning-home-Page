@@ -35,12 +35,17 @@ const FAQPage = () => {
 
   return (
     <div className=" bg-white ">
-    <div className="bg-green-50 py-8 px-0 md:px-32">
-      {/* Header */}
-      <header className="bg-[#004D40] rounded-lg py-60 px-16 text-center">
-        <h1 className="text-white text-5xl font-bold">FAQ Page</h1>
-      </header>
-      </div>
+    
+    <div className="bg-green-50">
+        <div className="bg-teal-800py-8 px-4 md:px-8 ">
+        <header className="mentors-hero rounded-lg bg-teal-800 text-white py-56 text-center px-68">
+          
+          <h1 className="text-4xl font-bold">FAQ Page</h1>
+        </header>
+        </div>
+        </div>
+
+
       {/* FAQ Section */}
       <section className="py-16 max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">
