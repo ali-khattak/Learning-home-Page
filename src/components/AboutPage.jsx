@@ -8,10 +8,10 @@ const AboutPage = () => {
     <div>
       {/* Vision Section */}
       <section className="bg-green-50 min-h-screen flex flex-col items-center justify-center">
-        <div className="bg-[#004D40] rounded-lg py-16 px-56 text-center relative overflow-hidden">
+        <div className="bg-teal-800 rounded-lg py-48 px-72 text-center relative overflow-hidden">
           <div className="absolute top-0 left-0 w-20 h-20 bg-[#B2DFDB] rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 right-0 w-20 h-20 bg-[#FFEB3B] rounded-full transform translate-x-1/2 translate-y-1/2"></div>
-          <h4 className="text-sm text-[#B2DFDB] mb-4">OUR VISION</h4>
+          <h4 className="text-sm text-white mb-4">OUR VISION</h4>
           <h2 className="text-2xl md:text-3xl text-white font-semibold mb-8">
             We aspire to create a global landscape<br/> where individuals everywhere possess the<br/> ability to reshape their destinies through the<br/> empowerment of education.
           </h2>
