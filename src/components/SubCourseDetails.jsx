@@ -54,7 +54,7 @@ const CourseDetailPage = () => {
     return (
         <div className="bg-green-50 course-detail-page">
             <div className="bg-green-50 course-detail-page">
-                <div className="course-hero bg-teal-800 text-white p-8 rounded-lg shadow-lg flex justify-between items-center mx-4 md:mx-16">
+                <div className="course-hero bg-teal-800 text-white p-48 rounded-lg shadow-lg flex justify-between items-center mx-4 md:mx-8">
                     <div>
                         <h1 className="text-4xl font-bold">{courseDetails.title}</h1>
                         <p className="mt-4">{courseDetails.description}</p>
