@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Newsletter from "./Newsletter";  // Adjust the path as needed
+import Footer from "./Footer";          // Adjust the path as needed
 
 const BlogAndArticlesPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -67,26 +69,28 @@ const BlogAndArticlesPage = () => {
       : articles.filter((article) => article.category === selectedCategory);
 
   return (
-    <div className="container mx-auto px-16">
-    <div className="bg-[#F4FDFB]">
+    <div className="bg-green-50">
       {/* Header Section */}
-      <div className="bg-[#134e4a] py-16 px-4 flex justify-center">
-        <h1 className="text-sm font-bold text-white uppercase">Blog</h1>
-      </div>
-      <div className="bg-[#134e4a] py-16 px-4 flex justify-center">
-        <h1 className="text-white text-5xl font-bold">Articles & News</h1>
+      <div className="bg-green-50 rounded-lg py-8 px-0 md:px-32">
+        <div className="bg-[#134e4a] rounded-lg py-32 px-60 flex justify-center">
+          <h1 className="text-sm font-bold text-white uppercase">Blog</h1>
+        </div>
+        <div className="bg-[#134e4a] rounded-lg py-20 px-16 flex justify-center">
+          <h1 className="text-white text-5xl font-bold">Articles & News</h1>
+        </div>
       </div>
 
       {/* Latest Articles Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center">
-            <h2 className="text-2xl font-bold">Latest articles</h2>
-            <div className="flex gap-4">
+      <section className="bg-white px-8 py-16">
+        <div>
+          <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+            <h2 className="text-2xl font-bold mb-4 md:mb-0">Latest articles</h2>
+            <div className="flex flex-wrap gap-4">
+              {/* Category Buttons */}
               <button
-                className={`px-4 py-2 rounded-full ${
+                className={`px-4 py-2 rounded-full text-sm ${
                   selectedCategory === "All"
-                    ? "bg-green-600 text-white"
+                    ? "bg-[#134e4a] text-white"
                     : "bg-gray-200"
                 }`}
                 onClick={() => setSelectedCategory("All")}
@@ -94,7 +98,7 @@ const BlogAndArticlesPage = () => {
                 All
               </button>
               <button
-                className={`px-4 py-2 rounded-full ${
+                className={`px-4 py-2 rounded-full text-sm ${
                   selectedCategory === "Marketing"
                     ? "bg-green-600 text-white"
                     : "bg-gray-200"
@@ -104,7 +108,7 @@ const BlogAndArticlesPage = () => {
                 Marketing
               </button>
               <button
-                className={`px-4 py-2 rounded-full ${
+                className={`px-4 py-2 rounded-full text-sm ${
                   selectedCategory === "Technology"
                     ? "bg-green-600 text-white"
                     : "bg-gray-200"
@@ -114,7 +118,7 @@ const BlogAndArticlesPage = () => {
                 Technology
               </button>
               <button
-                className={`px-4 py-2 rounded-full ${
+                className={`px-4 py-2 rounded-full text-sm ${
                   selectedCategory === "SEO"
                     ? "bg-green-600 text-white"
                     : "bg-gray-200"
@@ -124,7 +128,7 @@ const BlogAndArticlesPage = () => {
                 SEO
               </button>
               <button
-                className={`px-4 py-2 rounded-full ${
+                className={`px-4 py-2 rounded-full text-sm ${
                   selectedCategory === "Social Media"
                     ? "bg-green-600 text-white"
                     : "bg-gray-200"
@@ -135,20 +139,22 @@ const BlogAndArticlesPage = () => {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredArticles.map((article) => (
               <Link to={`/articles/${article.id}`} key={article.id}>
-                <div className="bg-white rounded-lg shadow-lg p-6 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white rounded-lg shadow-lg flex flex-col h-full p-6 cursor-pointer hover:shadow-xl transition-shadow duration-300">
                   <img
                     src={article.image}
                     alt={`Article ${article.id}`}
                     className="w-full h-48 object-cover rounded-lg"
                   />
-                  <h3 className="text-lg font-semibold mt-4">{article.title}</h3>
-                  <p className="text-sm text-gray-500 mt-2">{article.date}</p>
-                  <p className="text-sm text-gray-700 mt-4">
-                    {article.content}
-                  </p>
+                  <div className="flex flex-col flex-grow mt-4">
+                    <h3 className="text-lg font-semibold">{article.title}</h3>
+                    <p className="text-sm text-gray-500 mt-2">{article.date}</p>
+                    <p className="text-sm text-gray-700 mt-4 flex-grow">
+                      {article.content}
+                    </p>
+                  </div>
                   <span className="mt-4 text-green-600 font-semibold inline-block">
                     Read More
                   </span>
@@ -160,70 +166,10 @@ const BlogAndArticlesPage = () => {
       </section>
 
       {/* Newsletter Subscription Section */}
-      <section className="py-16 bg-[#F4FDFB]">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">Subscribe Our Newsletter</h2>
-          <p className="mb-8">
-            Join now to receive personalized recommendations from the full
-            Coursera catalog.
-          </p>
-          <div className="flex justify-center">
-            <input
-              type="email"
-              placeholder="Enter your mail"
-              className="px-4 py-2 border rounded-lg w-2/3 md:w-1/3"
-            />
-            <button className="ml-4 px-5 py-2 bg-green-600 text-white rounded-full">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </section>
+      <Newsletter className="p-0" />
 
       {/* Footer Section */}
-      <footer className="bg-[#134e4a] text-white py-8">
-        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">KnowledgePulse</h3>
-            <p className="text-sm">
-              Join now to receive personalized
-              <br />
-              recommendations from the full <br />
-               Coursera catalog.     
-            </p>
-            <div className="flex space-x-8">
-              <img src="/public/insta.svg" alt="Instagram" className="w-6 h-6 cursor-pointer" />
-              <img src="/public/twitter.svg" alt="Twitter" className="w-6 h-6 cursor-pointer" />
-              <img src="/public/facebook.svg" alt="Facebook" className="w-6 h-6 cursor-pointer" />
-              <img src="/public/youtube.svg" alt="YouTube" className="w-6 h-6 cursor-pointer" />
-            </div>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">Company</h3>
-            <ul className="text-sm">
-              <li><a href="#" className="hover:underline">About us</a></li>
-              <li><a href="#" className="hover:underline">Blog</a></li>
-              <li><a href="#" className="hover:underline">Contact us</a></li>
-              <li><a href="#" className="hover:underline">Pricing</a></li>
-              <li><a href="#" className="hover:underline">Testimonials</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">Support</h3>
-            <ul className="text-sm">
-              <li><a href="#" className="hover:underline">Help center</a></li>
-              <li><a href="#" className="hover:underline">Terms of service</a></li>
-              <li><a href="#" className="hover:underline">Legal</a></li>
-              <li><a href="#" className="hover:underline">Privacy policy</a></li>
-              <li><a href="#" className="hover:underline">Status</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="text-center mt-8">
-          <p className="text-xs">&copy; 2024 KnowledgePulse. All rights reserved.</p>
-        </div>
-      </footer>
-    </div>
+      <Footer className="p-0" />
     </div>
   );
 };
