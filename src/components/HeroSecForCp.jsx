@@ -63,7 +63,7 @@ const HeroSecForCp = () => {
                 <FaChevronDown className="ml-6 " />
               </button>
             {dropdownVisible && (
-              <div className="absolute right-0 mt-2 w-48 bg-black border border-gray-300 rounded-lg shadow-lg z-10">
+              <div className="absolute bg-teal-800 right-0 mt-2 w-48 bg-black border border-gray-300 rounded-lg shadow-lg z-10">
                 <ul className="py-2">
                   <li 
                     className="px-4 py-2 hover:bg-teal-800 cursor-pointer" 
