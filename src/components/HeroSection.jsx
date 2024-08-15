@@ -34,18 +34,14 @@ const HeroSection = () => {
 
   return (
     <section className="relative bg-teal-50 p-8">
-      <div
-        className="container mx-auto   lg:w-[95%]"
-        style={{ maxWidth: "95%" }}
-      >
+      <div className=" mx-auto     lg:w-[95%]">
         <div className="bg-[#003C3C] text-white   rounded-lg  md:flex md:justify-between items-start  md:py-10 md:pl-10     shadow-lg">
           <div className="p-4 md:p-0 ">
             <h1 className="text-lg font-medium tracking-widest">
               K N O W L E D G E P U L S E
             </h1>
-            <h2 className="text-6xl font-bold mt-4">
-              Knowledge Meets
-              <br /> Innovation
+            <h2 className="lg:text-6xl  font-bold mt-4">
+              Knowledge Meets Innovation
             </h2>
             <p className="mt-4">
               This platform's simplicity belies its powerful capabilities,
@@ -96,7 +92,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className="mt-8 md:mt-0 md:w-1/2   ">
+          <div className="mt-8 md:mt-0    ">
             <img src={heroImage} alt="Hero" className="  rounded-lg" />
           </div>
         </div>
