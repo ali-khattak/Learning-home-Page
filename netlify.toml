@@ -1,0 +1,9 @@
+
+[build]
+publish="C:\\Users\\Tcv\\Desktop\\1\\dist"
+command = "npm run build" # Adjust according to your project setup
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

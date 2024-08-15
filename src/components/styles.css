@@ -1,0 +1,174 @@
+.mentors-slider-controls {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 0px !important; /* Ensure it moves further to the left */
+  display: flex;
+  flex-direction: row; /* Arrange buttons horizontally */
+  z-index: 1;
+}
+
+.courses-slider-controls {
+  position: left;
+  bottom: 120px; /* Adjust as needed */
+  left: 0px ; /* Ensure it moves further to the left */
+  display: flex;
+  flex-direction: row; /* Arrange buttons horizontally */
+  z-index: 1;
+}
+
+.custom-arrow {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .custom-arrow img {
+    filter: invert(30%) sepia(70%) saturate(500%) hue-rotate(90deg);
+  }
+  .mentors-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .mentors-hero {
+    background-color: #003D33;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .mentors-hero h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .mentors-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .mentors-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .mentors-section h2 span {
+    color: #00A896;
+  }
+  
+  .mentors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .mentor-card {
+    background-color: #E6F2F0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .mentor-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .mentor-info h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+  }
+  
+  .mentor-info p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .newsletter-section {
+    background-color: #DFF2EF;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .newsletter-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-section form {
+    display: inline-block;
+  }
+  
+  .newsletter-section input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .newsletter-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #00A896;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .newsletter-section button:hover {
+    background-color: #007F6F;
+  }
+  
+  .mentors-footer {
+    background-color: #003D33;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    margin-bottom: 30px;
+  }
+  
+  .footer-content p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons li {
+    display: inline;
+  }
+  
+  .social-icons li a {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
